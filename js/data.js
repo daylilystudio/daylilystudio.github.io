@@ -1,4 +1,22 @@
 var database = {
+    habit: [
+        {
+            img: "img/habit_draw.svg",
+            title: "Like illustration"
+        },
+        {
+            img: "img/habit_hiking.svg",
+            title: "Like Hiking"
+        },
+        {
+            img: "img/habit_video.svg",
+            title: "Like Dramas, Movie, Animate"
+        },
+        {
+            img: "img/habit_cat.svg",
+            title: "Love Cat"
+        },
+    ],
     experience: [
         {
             time: "JUL 2012 ‒<br>FEB 2015",
@@ -26,15 +44,15 @@ var database = {
             img: "img/icon_skill03.png",
             cat: "Front-end",
             catM: "前端開發",
-            text: `HTML5 (Pug)、CSS3 (SCSS)、
-                JS (Vue.js)、Git、WordPress`,
+            text: `HTML5、CSS3 (SCSS)、
+                Vue、Nuxt、Git、WordPress`,
         },
         {
             img: "img/icon_skill02.png",
             cat: "User Interface",
             catM: "介面設計",
             text: `Figma、AdobeXD、Sketch、<br />
-                Axure、UX sense`,
+                Whimsical、UX sense`,
         },
         {
             img: "img/icon_skill01.png",

@@ -27,6 +27,14 @@ const starCountRef = ref(db, 'msg');
 Vue.createApp({
     data() {
         return {
+            data: database.habit,
+        }
+    },
+}).mount('#vueAbout')
+
+Vue.createApp({
+    data() {
+        return {
             data: database.experience,
         }
     },
