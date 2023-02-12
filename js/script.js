@@ -24,39 +24,8 @@ const analytics = getAnalytics(app);
 const db = getDatabase(app);
 const starCountRef = ref(db, 'msg');
 
-Vue.createApp({
-    data() {
-        return {
-            data: database.habit,
-        }
-    },
-}).mount('#vueAbout')
-
-Vue.createApp({
-    data() {
-        return {
-            data: database.experience,
-        }
-    },
-}).mount('#vueExperience')
-
-Vue.createApp({
-    data() {
-        return {
-            data: database.skill,
-        }
-    },
-}).mount('#vueSkill')
-
-Vue.createApp({
-    data() {
-        return {
-            data: database.works,
-        }
-    },
-}).mount('#vueWorks')
-
 const vueApp = {
+    el: '#app',
     data() {
         return {
             msgData: [],
@@ -64,6 +33,11 @@ const vueApp = {
             msgText: "",
             msgColor: "#9B414B",
             msgAlert: "",
+            options: myFullpage,
+            habit: database.habit,
+            experience: database.experience,
+            skill: database.skill,
+            works: database.works
         }
     },
     methods: {
@@ -79,17 +53,17 @@ const vueApp = {
                 color: this.msgColor
             };
             if(!this.msgName || !this.msgText){
-                this.msgAlert = "要輸入暱稱和留言！"
+                this.msgAlert = "All required !"
                 return
-            } else if (this.msgName.length>9) {
-                this.msgAlert = "暱稱最多九個字元喔"
+            } else if (this.msgName.length>10) {
+                this.msgAlert = "Name up to 10 characters"
                 return
             }
             set(newPostRef, postData);
             this.msgName = "";
             this.msgText = "";
             this.msgColor = "#9B414B";
-            this.msgAlert = "留言成功 :-)";
+            this.msgAlert = "Message Success :-)";
         },
         readData: function () {
             onValue(starCountRef, (snapshot) => {
@@ -131,4 +105,5 @@ const vueApp = {
         Window.msgSwiper.update()
     },
 }
-Vue.createApp(vueApp).mount('#vueApp')
+// Vue.createApp(vueApp).mount('#vueApp')
+new Vue(vueApp)

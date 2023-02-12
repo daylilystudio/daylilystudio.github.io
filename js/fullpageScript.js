@@ -1,6 +1,6 @@
 // Fullpage設定
-var myFullpage = new fullpage('#fullpage', {
-    licenseKey: 'NO_KEY',
+var myFullpage = {
+  licenseKey: 'gplv3-license',
 	menu: 'nav',
 	anchors: ['home', 'about', 'experience', 'skill', 'works', 'contact', 'footer'],
     // navigationTooltips: ['Top', 'About', 'Experience', 'Skill', 'Works', 'Contact', 'Footer'],
@@ -13,31 +13,19 @@ var myFullpage = new fullpage('#fullpage', {
 	fitToSectionDelay: 500,
 	keyboardScrolling: true,
 	recordHistory: true,
-
 	//events
-    afterLoad: function (origin, destination, direction) {
-        var loadedSection = this;
-        //using anchorLink
-        if (destination.anchor == 'experience') {
-            document.querySelector('nav').style.display = "none"
-        }else{
-            document.querySelector('nav').style.display = "flex"
-        }
-        if (destination.anchor == 'home') {
-            document.querySelector('.top').style.display = "none"
-        }else{
-            document.querySelector('.top').style.display = "flex"
-        }
-    }
-});
-
-//點擊按鈕往下一個anchors
-document.querySelector('#btnGoDown').addEventListener('click',function () {
-    console.log(1);
-    fullpage_api.moveSectionDown();
-})
-
-//回頂端
-document.querySelector('.top').addEventListener('click',function () {
-    fullpage_api.moveTo('home')
-})
+  afterLoad: function (origin, destination, direction) {
+      var loadedSection = this;
+      //using anchorLink
+      if (destination.anchor == 'experience') {
+          document.querySelector('nav').style.display = "none"
+      }else{
+          document.querySelector('nav').style.display = "flex"
+      }
+      if (destination.anchor == 'home') {
+          document.querySelector('.top').style.display = "none"
+      }else{
+          document.querySelector('.top').style.display = "flex"
+      }
+  }
+}
