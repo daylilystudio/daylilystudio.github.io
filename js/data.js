@@ -20,7 +20,8 @@ var database = {
     experience: [
         {
             time: "JUL 2012 ‒<br>FEB 2015",
-            company: "Publishing House",
+            // company: "Publishing House",
+            company: "SanMin Book",
             title: "Art Design",
         },
         {
@@ -30,12 +31,14 @@ var database = {
         },
         {
             time: "SEP 2018 ‒<br>MAY 2020",
-            company: "Software company",
+            // company: "Software company",
+            company: "17 Life",
             title: "UI Designer",
         },
         {
             time: "MAY 2021 ‒<br>Present",
-            company: "E-Commerce",
+            // company: "E-Commerce",
+            company: "PChome Group",
             title: "Front-end Developer",
         },
     ],
