@@ -75,6 +75,7 @@ const vueApp = {
                 Window.msgSwiper = new Swiper(".msgSwiper", {
                     slidesPerView: 1.5,
                     spaceBetween: 15,
+                    freeMode: true,
                     scrollbar: {
                         el: ".swiper-scrollbar",
                         draggable: true,

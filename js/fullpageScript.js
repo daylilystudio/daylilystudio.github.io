@@ -9,6 +9,7 @@ var myFullpage = {
 	css3: true,
 	scrollingSpeed: 700,
 	scrollOverflow: true,
+    scrollOverflowReset: true,
 	fitToSection: true,
 	fitToSectionDelay: 500,
 	keyboardScrolling: true,
@@ -24,8 +25,10 @@ var myFullpage = {
       }
       if (destination.anchor == 'home') {
           document.querySelector('.top').style.display = "none"
+          document.querySelector('#fp-nav').style.display = "none"
       }else{
           document.querySelector('.top').style.display = "flex"
+          document.querySelector('#fp-nav').style.display = "block"
       }
   }
 }

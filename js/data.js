@@ -22,7 +22,7 @@ var database = {
             time: "JUL 2012 ‒<br>FEB 2015",
             // company: "Publishing House",
             company: "SanMin Book",
-            title: "Art Design",
+            title: "Graphic Design",
         },
         {
             time: "SEP 2013 ‒<br>JUN 2017",
@@ -36,7 +36,7 @@ var database = {
             title: "UI Designer",
         },
         {
-            time: "MAY 2021 ‒<br>Present",
+            time: "MAY 2021 ‒<br>APR 2023",
             // company: "E-Commerce",
             company: "PChome Group",
             title: "Front-end Developer",
