@@ -19,15 +19,10 @@ var database = {
     ],
     experience: [
         {
-            time: "JUL 2012 ‒<br>FEB 2015",
-            // company: "Publishing House",
-            company: "SanMin Book",
-            title: "Graphic Design",
-        },
-        {
-            time: "SEP 2013 ‒<br>JUN 2017",
-            company: "Shih Chien University",
-            title: "Master of Design,</br>Communications Design",
+            time: "MAY 2021 ‒<br>APR 2023",
+            // company: "E-Commerce",
+            company: "PChome Group",
+            title: "Front-end Developer",
         },
         {
             time: "SEP 2018 ‒<br>MAY 2020",
@@ -36,10 +31,14 @@ var database = {
             title: "UI Designer",
         },
         {
-            time: "MAY 2021 ‒<br>APR 2023",
-            // company: "E-Commerce",
-            company: "PChome Group",
-            title: "Front-end Developer",
+            time: "SEP 2013 ‒<br>JUN 2017",
+            company: "Shih Chien University",
+            title: "Master of Design,</br>Communications Design",
+        },
+        {
+            time: "JUL 2012 ‒<br>FEB 2015",
+            company: "SanMin Publisher",
+            title: "Graphic Design",
         },
     ],
     skill: [
@@ -71,21 +70,28 @@ var database = {
             link: "https://daylilystudio.github.io/meowforest",
             title: "Meow Forest EC",
             cat: "F2E & UI",
-            text: `Vue3, tailwind, naive-ui, pinia`,
+            text: `Vue3, Pinia, Tailwind, naive-ui`,
+        },
+        {
+            img: "img/works_crm.gif",
+            link: "https://daylilystudio.github.io/crm/",
+            title: "CRM System",
+            cat: "F2E & UI",
+            text: `Vue3, Vuex, Typescript, Element Plus`,
         },
         {
             img: "img/works_mask.jpg",
             link: "https://daylilystudio.github.io/maskmap",
             title: "Taiwan Mask Map",
             cat: "F2E & UI",
-            text: `Vue3, tailwind, Mapbox GL JS`,
+            text: `Vue3, Tailwind, Mapbox GL JS`,
         },
         {
             img: "img/works_todolist.jpg",
             link: "https://daylilystudio.github.io/react-todolist",
             title: "Todo List",
             cat: "F2E & UI",
-            text: `React(version 18), tailwind`,
+            text: `React (ver.18), Tailwind`,
         },
         {
             img: "img/works_c.jpg",
@@ -95,13 +101,6 @@ var database = {
             text: `A site by custom WordPress theme`,
         },
         {
-            img: "img/works_uber.jpg",
-            link: "works/union/",
-            title: "Uber Eats",
-            cat: "F2E & UI",
-            text: `A campaign using GSAP.js`,
-        },
-        {
             img: "img/works_daylilynew.jpg",
             link: "https://daylily.tw",
             title: "Daylily illustration",
@@ -109,11 +108,11 @@ var database = {
             text: `My personal website`,
         },
         {
-            img: "img/works_taroko.jpg",
-            link: "works/taroko/",
-            title: "TAROKO APP",
-            cat: "UI Design",
-            text: `複合式商場-大魯閣草衙道APP介面設計`,
+            img: "img/works_uber.jpg",
+            link: "works/union/",
+            title: "Uber Eats",
+            cat: "F2E & UI",
+            text: `A campaign with GSAP.js`,
         },
     ],
 }

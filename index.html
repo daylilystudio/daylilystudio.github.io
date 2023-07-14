@@ -42,9 +42,9 @@
         <div>
           <h2>About_</h2>
           <p>
-              <span>Ming-Hsuan ( Lily ) , Taiwan</span> <br>
-              國高中皆就讀美術班，實踐媒傳所畢業，約 6 年前端開發 & UI 設計相關工作經驗。<br>
-              小時就曾對網頁語法充滿好奇，做過一個漫畫網站經營了幾年。工作後開始接觸網頁開發技術，慢慢從設計轉成前端工程。相信繪畫、設計、前端會是我一生的志業。
+              <span>Lily Chang ,</span> <br>
+              I have transitioned from UI designer to front-end developer. I totally have six years of work experience, part of two years in front-end.<br>
+              Skilled in Javascript, VueJS, NuxtJS. I am looking for a front-end job in Australia.
           </p>
           <p>
               <img v-for="(item,i) in habit" :src="item.img" :title="item.title">
@@ -83,7 +83,7 @@
           <li v-for="(list,i) in skill">
             <img :src="list.img" alt="">
             <p>{{list.cat}}</p>
-            <p>{{list.catM}}</p>
+            <!-- <p>{{list.catM}}</p> -->
             <span v-html="list.text"></span>
           </li>
         </ul>
@@ -93,6 +93,7 @@
     <!-- 區塊 5 -->
     <div class="section">
       <div class="container sectionWorks">
+        <p class="sub">Development & UI Design all by me.</p>
         <ul>
           <li v-for="(card,i) in works"
           :style="{backgroundImage: 'url(' +card.img+ ')' }">
@@ -100,7 +101,7 @@
               <div class="text_block">
                 <h3>{{card.title}}</h3>
                 <div>
-                  <p>{{card.cat}}</p>
+                  <!-- <p>{{card.cat}}</p> -->
                   <span v-html="card.text"></span>
                   <button>VIEW →</button>
                 </div>
