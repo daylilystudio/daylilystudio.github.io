@@ -21,7 +21,7 @@ var database = {
         {
             time: "MAY 2021 ‒<br>APR 2023",
             // company: "E-Commerce",
-            company: "PChome Group",
+            company: "PChome Corp.",
             title: "Front-end Developer",
         },
         {
