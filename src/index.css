@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/* Custom styles for Fullpage.js if needed */
+.fp-watermark {
+  display: none !important;
+}
+
+/* Scrollbar hiding for works section */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Fix for fullpage.js scrollOverflow container height */
+.fp-overflow {
+  height: 100% !important;
+}
+
+/* Custom colors for Fullpage.js navigation dots */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #E1CD8D !important;
+  /* primary-light */
+}
