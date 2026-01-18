@@ -140,7 +140,7 @@ const data: Data = {
       link: "https://daylily.tw",
       title: "Daylily illustration",
       cat: "F2E & UI",
-      text: `My personal website`,
+      text: `Next App Router, Cache component, Tailwind`,
     },
     {
       img: "img/works_uber.jpg",
