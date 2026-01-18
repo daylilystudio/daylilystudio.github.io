@@ -1,0 +1,33 @@
+//動畫
+@keyframes circle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes bgAni {
+    0%{
+        background-position: left 0px top 0px;
+    }
+    100%{
+        background-position: left -333px top -335px;
+    }
+}
+@keyframes bling {
+    50%{
+        filter: brightness(1);
+    }
+    100%{
+        filter: brightness(1.1);
+    }
+}
+@keyframes float {
+    0%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(-0px);
+    }
+}

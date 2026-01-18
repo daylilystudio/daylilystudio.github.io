@@ -1,0 +1,144 @@
+.lightbox-target {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  opacity: 0;
+  transition: .5s ease-in-out;
+  overflow: hidden;
+  z-index: 100;
+}
+.lightbox-target .lightbox-content {
+  width: 90%;
+  height: 90%;
+  background: #000;
+  color: #333;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 0px solid #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  transition: .5s ease-in-out;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  transition: .5s ease-in-out;
+}
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+.lightbox-target:target .lightbox-content,
+.lightbox-target:target img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.lightbox-target:target .lightbox-close {
+  top: 1rem;
+}
+.lightbox-close {
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 2.5rem;
+  z-index: 100;
+}
+.lightbox-close:before,
+.lightbox-close:after {
+  content: " ";
+  display: block;
+  height: 30px;
+  width: 2px;
+  background: #000;
+  position: absolute;
+  left: 24px;
+  top: 10px;
+  transform: rotate(45deg);
+}
+.lightbox-close:after {
+  transform: rotate(-45deg);
+}
+
+
+//詳情框樣式
+.content_wrap{
+    max-width: 1080px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+.content{
+    padding: 1rem;
+    h3{
+        text-align: center;
+        margin: 1rem auto 0rem auto;
+        padding: 0.5rem;
+        background-color: $themeColor; /* 標題背景色 */
+        color: #fff;
+        border-top-right-radius: 2.5rem;
+        border-top-left-radius: 2.5rem;
+        font-size: 1.5rem;
+    }
+    h4{
+        color:$themeColor;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        padding-bottom: 0.5rem;
+    }
+    h5{
+        text-align: center;
+        padding-bottom: 0.5rem;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    ul{
+        padding-right : 0rem;
+        padding-left : 1.5rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+        color: #fff;
+        &>li{
+            list-style: decimal;
+        }
+    }
+    hr{
+        margin-bottom: 1rem;
+    }
+    p{
+        padding-top: 1rem;
+    }
+}
+.content_box{
+    background-color: rgba(#fff,0.8);
+    width: 100%;
+    box-sizing: border-box;
+    margin:0px auto;
+    border-bottom-right-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    padding: 1.2rem;
+}
+.content_inner{
+    padding: 0rem;
+}
