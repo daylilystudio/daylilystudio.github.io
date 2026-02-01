@@ -87,15 +87,15 @@ const data: Data = {
       img: "img/icon_skill03.png",
       cat: "Front-end",
       catM: "前端開發",
-      text: `HTML5、CSS3 (SCSS)、
-                Vue、Nuxt、Git、WordPress`,
+      text: `React / Next Ecosystem、TypeScript、
+                Tailwind、RWD、Git、AWS Amplify`,
     },
     {
       img: "img/icon_skill02.png",
       cat: "User Interface",
       catM: "介面設計",
-      text: `Figma、AdobeXD、Sketch、<br />
-                Whimsical、UX sense`,
+      text: `Design System、Prototype、
+                Wireframe、Responsive Design`,
     },
     {
       img: "img/icon_skill01.png",
