@@ -87,22 +87,19 @@ const data: Data = {
       img: "img/icon_skill03.png",
       cat: "Front-end",
       catM: "前端開發",
-      text: `React / Next Ecosystem、TypeScript、
-                Tailwind、RWD、Git、AWS Amplify`,
+      text: `React / Next.js Ecosystem、TypeScript、Tailwind、RWD、Git、AWS Amplify`,
     },
     {
       img: "img/icon_skill02.png",
       cat: "User Interface",
       catM: "介面設計",
-      text: `Design System、Prototype、
-                Wireframe、Responsive Design`,
+      text: `Design System、Prototype、Wireframe、Responsive Design`,
     },
     {
       img: "img/icon_skill01.png",
       cat: "Communication",
       catM: "媒體傳達設計",
-      text: `Ps、Ai、inDesign、
-                AnimateCC、AfterEffect`,
+      text: `Ps、Ai、inDesign、AnimateCC、AfterEffect`,
     },
   ],
   works: [ //固定七個
