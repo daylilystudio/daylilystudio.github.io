@@ -13,8 +13,8 @@ const SectionAbout = () => {
 					<div className='pl-[3cqw]'>
 						<p className="text-[5cqw] sm:text-[1.7cqw] leading-8">
 							<span className="text-secondary-light font-bold">Lily Chang ,</span> <br />
-							I am a front-end developer with a background in UI design. I have 8 years of work experience, part of
-							four years in front-end development.
+							I am a front-end developer with a background in design. I have 8 years of work experience, part of
+							4 years in front-end development.
 							Specialize in using JS, React, NextJS. I enjoy the process which finding solutions to solve
 							technical problems. It gives me a great sense of accomplishment.
 						</p>

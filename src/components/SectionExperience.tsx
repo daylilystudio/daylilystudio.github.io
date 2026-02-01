@@ -6,11 +6,11 @@ const SectionExperience = () => {
       className="section bg-primary-light bg-no-repeat bg-[size:auto_30%] lg:bg-[size:100%_30%] bg-[position:center_top] relative"
       style={{ backgroundImage: "url(/img/bg_curve.png)" }}
     >
-      <div className="mx-auto h-full flex flex-col justify-start items-center overflow-x-hidden">
-        <h2 className="flex justify-center items-center h-[28vh]">
+      <div className="relative mx-auto h-full flex flex-col justify-start items-center overflow-hidden">
+        <h2 className="flex justify-center items-center h-[30vh]">
           <img src="/img/title_experience.svg" alt="Experience" className="h-[9vh] w-auto" />
         </h2>
-        <div className="pt-[6vh] relative h-[60vh] w-full flex flex-col items-center">
+        <div id='experience-content' className="pt-[2vh] pb-[6vh] h-[60vh] w-full flex flex-col items-center overflow-y-scroll">
           {/* Timeline Line */}
           {data.experience.map((item, i) => (
             <div key={i} className={`group flex justify-center items-center relative mb-[7vh] z-[5] 
@@ -32,10 +32,10 @@ const SectionExperience = () => {
                 ${i % 2 === 0 ? '-left-15' : '-right-15'}`} />
             </div>
           ))}
-          <div className="absolute opacity-15 w-50 h-[60vh] left-1/2 -translate-x-1/2 bottom-0 bg-[linear-gradient(transparent_0%,rgba(0,0,0,0.2),#000,#000,rgba(14,49,80,0))] z-1" />
-          <div className="absolute w-[12px] h-full top-0 bottom-0 left-1/2 -translate-x-1/2 bg-[linear-gradient(transparent_0%,rgba(247,234,228,0.7),rgba(247,234,228,0.7))] z-1"></div>
-          <div className="absolute w-[12px] h-8 -bottom-12 left-1/2 -translate-x-1/2 bg-[rgba(247,234,228,0.7)] z-1"></div>
         </div>
+        <div className="absolute opacity-15 w-50 h-[70vh] left-1/2 -translate-x-1/2 bottom-0 bg-[linear-gradient(transparent_0%,rgba(0,0,0,0.2),#000,#000,rgba(14,49,80,0))] z-1" />
+        <div className="absolute w-[12px] h-[60vh] bottom-[8vh] left-1/2 -translate-x-1/2 bg-[linear-gradient(transparent_0%,rgba(247,234,228,0.7)_30%,rgba(247,234,228,0.7))] z-1"></div>
+        <div className="absolute w-[12px] h-[4vh] bottom-[2vh] left-1/2 -translate-x-1/2 bg-[rgba(247,234,228,0.7)] z-1"></div>
       </div>
     </div>
   );

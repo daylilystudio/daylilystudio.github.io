@@ -53,6 +53,12 @@ const data: Data = {
   ],
   experience: [
     {
+      time: "JUL 2024 ‒<br>present",
+      // name: "E-Commerce",
+      name: "Readmoo",
+      title: "Front-end Developer",
+    },
+    {
       time: "MAY 2021 ‒<br>APR 2023",
       // name: "E-Commerce",
       name: "PChome Corp.",
@@ -129,18 +135,18 @@ const data: Data = {
       text: `React (ver.18), Tailwind`,
     },
     {
+      img: "img/works_daylily.jpg",
+      link: "https://daylily.tw",
+      title: "Daylily illustration",
+      cat: "F2E & UI",
+      text: `Next App Router, Cache component, Tailwind`,
+    },
+    {
       img: "img/works_c.jpg",
       link: "works/c/index.html",
       title: "C T K website",
       cat: "F2E & UI",
       text: `A site by custom WordPress theme`,
-    },
-    {
-      img: "img/works_daylilynew.jpg",
-      link: "https://daylily.tw",
-      title: "Daylily illustration",
-      cat: "F2E & UI",
-      text: `Next App Router, Cache component, Tailwind`,
     },
     {
       img: "img/works_uber.jpg",

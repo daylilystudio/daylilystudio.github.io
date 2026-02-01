@@ -50,6 +50,7 @@ const App: React.FC = () => {
         scrollingSpeed={700}
         onLeave={onLeave}
         afterLoad={afterLoad}
+        normalScrollElements='#experience-content'
         render={({ state: _state, fullpageApi }: { state: any; fullpageApi: FullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
